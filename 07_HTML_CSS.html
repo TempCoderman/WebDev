@@ -1,0 +1,72 @@
+
+
+                                            Topics:
+                                                    Types of CSS 
+                                                    How to implement CSS
+                                                    Selector in CSS
+
+<!DOCTYPE html>
+<head>
+
+    <title>Document</title>
+    <!-- Internal CSS -->
+    <!-- If you want to give more priority to Internal than use "!important" at the end -->
+    <style>
+         p1{
+            color: purple !important;
+            border: red 2px solid; 
+         }
+
+                /* ID  (this is a comment in CSS) */
+                #redElement{
+                    color: brown;
+
+                }
+
+/* CLASS */  
+.blueElement{
+    color: blue;
+}
+
+.bgYellow{
+    background: yellow;
+}
+
+            Footer , Span{
+                background: #000;
+                color: aliceblue;
+            }
+
+    </style>
+
+                <!-- External CSS -->
+                <link rel="stylesheet" href="07_style.css">
+</head>
+<body>
+
+    <h1>This is CSS tutorial</h1>
+    <!-- Inline CSS (Inline CSs has more priority than other two CSS)-->
+          <p style= "color: red;">This tutorial will teach you everything you need to know about CSS</p>
+
+
+    <!-- Internal CSS -->
+    <p1> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum optio odio quis.</p1>
+
+
+            <!-- External CSS -->
+            <p3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quibusdam fugiat officiis eius unde eos beatae </p3>
+
+<!-- Using ID -->
+<p4 id="redElement">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, temporibus libero id saepe eos ducimus aperiam mollitia.</p4>
+
+
+        <!-- Using CLASS -->
+        <P5 class="blueElement bgYellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores odio sunt cupiditate delectus sequi.</P5>
+
+
+<span>This is span</span>
+<footer>This is Footer</footer>
+
+    
+</body>
+</html>

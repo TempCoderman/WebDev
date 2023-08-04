@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nature's Life</title>
+    <Style>
+        body {
+            background: url(pexels-scott-webb-532566.jpg);
+            background-repeat: no-repeat;
+            /* background-size: 1536px 745px; OR */
+            /* background-size: 100%; */
+            /* background-color: #494d5f; */
+            background-size: 1536px;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: absolute;
+            left: -82px;
+            margin-top: -71px
+        }
+
+        .left img {
+            width: 220px;
+            /* filter: invert(100%); */
+        }
+
+        .mid {
+            /* border: 2px solid yellow; */
+            display: block;
+            /* background-color: bisque; */
+            width: 50%;
+            margin: 29px auto;
+        }
+
+        .right {
+            /* border: 2px solid rgb(255, 200, 0); */
+            display: inline-block;
+            position: absolute;
+            right: 22px;
+            top: 24px;
+        }
+
+        .right img {
+            padding: 14px;
+        }
+
+        .nav {
+            display: inline-block;
+        }
+
+        .nav li {
+            display: inline-block;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: #229611;
+            padding: 17px;
+        }
+
+        .form {
+            border: 3px solid green;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 6%;
+            margin-left: 20%;
+            margin-right: 41%;
+            border-radius: 20px;
+            padding: 31px;
+        }
+
+        .form-group input {
+            display: block;
+            margin: 16px;
+            padding: 4px;
+            border-radius: 8px;
+        }
+
+        .form button {
+            display: block;
+            width: 57px;
+            border-radius: 6px;
+            margin-top: 12px;
+            margin-left: 52px;
+            padding: 6px;
+        }
+
+        .btn:hover {
+            background-color: rgb(153 193 172);
+        }
+
+        .nav li a {
+            text-decoration: none;
+            padding: 34px 23px;
+
+        }
+
+        .nav li a:hover,
+        .nav li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        h1{
+          font-family: Bradley Hand ,cursive;
+          color: #0a750a;  
+        }
+
+    </Style>
+
+</head>
+
+<body>
+    <div class="left">
+        I am Left
+        <img src="natures life logo1.png" alt="img">
+    </div>
+
+
+    <div class="mid">
+
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Feature</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Trend</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Contact Us</a></li>
+
+        </ul>
+    </div>
+    </div>
+
+    <div class="right">
+
+        <img src="magnifying-glass.png" alt="" width="23px">
+        <img src="shopping-cart.png" alt="" width="23px">
+        <img src="user.png" alt="" width="23px">
+    </div>
+
+
+    <div class="container">
+
+        <form action="action.php" class="form">
+            <h1>Welcome to Nature's Life Site</h1>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

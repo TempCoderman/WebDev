@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>FORMS AND INPUT TAGS</title>
+</head>
+<body>
+
+    <!-- In <Form> 'Action' is Attribute is used to give a link to the Back-End (php , python) . 
+        example -> <form action="backend.php"></form> , then the all data that user gives us 
+        will goes to our server by the the backend.
+     -->
+
+<!-- INPUTS
+
+Types of inputs :-
+1. Button
+2. checkBox
+3. color
+4.date
+5.datetime
+6.datetime-local
+7.email
+8.file 
+9.reset
+10.submit
+11.
+etc.. --> 
+
+                <!--        ATTRIBUTES
+                    VALUE :- is used to give a name of button
+                    NAME :- is used to group a option like in Radio button.    
+                -->
+
+ <!-- Use 'Div' Tag instead of <Br> Tage as possible (this line recomended by cwh) -->
+ 
+ <form action="backend.php"> 
+    <!-- because we use 'action' attribute in form , Then when we click on Submit Button on the end , Then it will Redirect on Backend Page  -->
+
+    <div>
+        Name : <input type="text" name="myName"> 
+        <!--Here we use name (myName) attribute is for backend so we can see all corresponing value 
+            eneter by user in name by the attribute name(myName).-->
+    </div><br>
+
+    <div>
+        Email : <input type="email" name="myEmail">
+    </div><br>
+
+    <div>
+        Write about yourself : <textarea name="myText" cols="30" rows="10"></textarea>
+    </div><br>
+    
+    <div>
+        Date : <input type="date" name="myDate">
+    </div><br>
+    
+    <div>
+        Number : <input type="number" name="myNumber">
+        <!-- In number we can only use "e" alphabate . Eg:-(34e2) means 34 power 2. -->
+    </div><br>
+
+    
+    <div>
+        Gender : Male<input type="radio" name="myGender"><br>
+                 Female<input type="radio" name="myGender"><br>
+                 other<input type="radio" name="myGender">
+                 <!-- here 'name' Attribute is more imp. , All name value must be same.(eg:- "myGender") -->
+    </div><br>
+    
+    <div>
+        Are you 18+ ? : <br>
+        18+<input type="checkbox" name="myEligiblity"><br>
+        Not 18 yet <input type="checkbox" name="myEligiblity" checked>
+        <!-- Are you 18+ ? : <input type="checkbox" name="myEligiblity" checked>
+        Here in upper line "checked" is used to by default box will be checked. (If you want to see how then uncomment this line for sometime ) -->
+    </div><br>
+
+    <div>
+        <input type="submit" value="Submit now">
+        <input type="reset" value="Reset value">
+        <!-- 'VALUE' attribute is use to show the text inside button -->
+    </div><br><br>
+
+
+=======================================================================================================================================================================
+                                    L A B E L
+
+                        <!-- LABEL tag is use for if we click on the name of the fild not inside the text box then also cusor will come inside text box.
+                        LABEL tag is connected with 'Id' so the name of label and id should be same. ( 'Id' should be same as of 'for') -->
+                                 
+
+                    <br><label for="Nam">Name</label>
+                    <div>
+                        <input type="text" name="myName" id="Nam"> 
+                        <!--Here we use name (myName) attribute is for backend so we can see all corresponing value 
+                            eneter by user in name by the attribute name(myName).-->
+                    </div><br>
+
+                    
+============================================================================================================================================================================
+                                        S E L E C T <br>
+
+    <!-- SELECT -->
+
+<label for="car"> Car</label>
+<select name="myCar" id="car">  <!-- Again Remainder 'for' and 'id' should be same-->
+        <option value="ind">Indica</option>
+        <option value="swf">Swift</option>
+        <option value="ver">Verna</option>
+</select> 
+    
+</form><br><br>
+
+
+<!-- ================================================================================================================================================== -->
+
+                    <!-- Teach in Classes (Akash Technolab) -->
+
+
+<form>
+Password : <input type="password"><br><br>
+
+Select language : <input type="checkbox" value="C" checked> C<br> <!-- CHECKED is used to select a option as bydefault. -->
+                  <input type="checkbox" value="Html"> Html<br>
+                  <input type="checkbox" value="Java"> Java<br> <br><br>
+
+Select a file: 
+<input type="file" name="myFile"><br><br>
+
+Number(between 1 and 5):
+<input type="number" min="1" max="5"> <!--we can also set limit. --> <br><br>
+
+<input type="button" value="Click Me"> <!--Button is used to take action like (Are you sure you want to procced ? {pop up dailogbox} using javascript).--> <br><br>
+
+Select your favorite color:
+<input type="color"> <br><br>
+
+Date : <input type="date" name="bday"> <br><br>
+
+Time:
+<input type="time"> <br><br>
+
+Range :
+<input type="range" min="0" max="10"> <br><br>
+
+URL : <input type="url" placeholder="Enter URL"> <br><br>
+
+Search : <input type="search" placeholder="Enter City" name="txtSearch"> <br><br>
+
+Date Time Local:
+<input type="datetime-local"> <!-- it is used to select both date and time together. --> <br><br>
+
+<!-- IMAGE 
+        Image is similer to submit attribute  -->
+E-mail:<input type="email" name="email"><br><br>
+<input type="image" src="download.png" width="80" height="80"> <BR><BR>
+
+
+Week: <input type="week"> <br><br>
+
+Month: <input type="month"><br><br>
+
+
+                        <!-- SELECT , OPTGROUP -->
+                                select Laguage :<select>
+                                    <option>Select</option>
+                                    <optgroup label="Web Designing">
+                                    <option>HTML</option>
+                                    <option>CSS</option>
+                                    </optgroup>
+                                    <optgroup label="Web Development">
+                                    <option>PHP</option>
+                                    <option>MySQL</option>
+                                    </optgroup>
+                                    </select> <br><br>
+
+                        <!-- FIELDSET , LEGEND -->
+
+                        <fieldset>
+                            <legend>Personal Info.</legend>
+                            First name:<input type="text" name="firstname">
+                            <br><br>
+                            Last name:<input type="text" name="lastname">
+                            </fieldset> <br><br>
+    
+
+
+
+
+</form>
+
+
+</body>
+</html>

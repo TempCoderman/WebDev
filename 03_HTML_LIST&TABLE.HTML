@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+        <!-- LIST are of 2 types ORDERLIST AND UNORDERLIST .
+        <ol> ORDED LIST -> list will come in oder wise (types :- Roman no. , number , alfabate).
+        <ul> UNORDER LIST -> list will come in oder wise (types :- Star , dot ,etc ).
+            TYPE Attribute is  -->
+
+            ODERED LIST
+            <!-- by default numberic sequence will come -->
+            
+            <ol>
+                <li>KHUSHAL</li>
+                <li>MITALI</li>
+                <li>ADITI</li>
+            </ol>
+
+            <ol type="I" >
+                <li>KHUSHAL</li>
+                <li>MITALI</li>
+                <li>ADITI</li>
+            </ol>
+
+            <ol type="A">
+                <li>KHUSHAL</li>
+                <li>MITALI</li>
+                <li>ADITI</li>
+            </ol>
+
+
+                        UNORDER LIST
+                        <ul type="circle">
+                            <li>KHUSHAL</li>
+                            <li>MITALI</li>
+                            <li>ADITI</li>
+                        </ul>
+            
+                        <ul>
+                            <li>KHUSHAL</li>
+                            <li>MITALI</li>
+                            <li>ADITI</li>
+                        </ul>
+            
+                        
+
+=======================================================================================================
+
+                        TABLE
+
+
+<!-- TABLE  1) table heading <thead>  -> <th> use thay
+            2) table body <tbody>  ->  <tr>  ->  <td> use thay       
+                
+                        <th>
+                 Tag is mostly used for Table Heading.
+                 Text in that will always in bold and in center.
+                 
+                                <td>
+                    td is fully opposite of th tag(opposite to upper line).
+
+ATTRIBUTES for Table
+<center>
+<caption>
+<table border , hieght , width , cellpadding , cellspacing
+       bordercolor , bgcolor >.
+       
+                    <td><th> common ATTRIBUTES
+                        <td rowspan , colspan >.                -->
+
+
+    <table>
+        
+        <thead>
+            <th>Name</th>
+            <th>Roll no.</th>
+            <th>Persentage</th>
+        </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>KHUSHAL</td>
+                            <td>20</td>
+                            <td>88</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>KARTIK</td>
+                            <td>34</td>
+                            <td>95</td>
+                        </tr>
+
+                        <tr>
+                            <td>SOHAM</td>
+                            <td>38</td>
+                            <td>93</td>
+                        </tr>
+                    </tbody>
+    </table> <br><br>
+
+
+
+
+
+                                    <center>
+                                        <caption>Table Name</caption>
+                                    <table border="3px"  hieght="300px" width="50%" cellpadding="3" cellspacing="7"
+                                    bordercolor=" yellow" bgcolor="lightblue" >
+                                        
+                                        <thead>
+                                            <th>Name</th>
+                                            <th>Roll no.</th>
+                                            <th>Persentage</th>
+                                            <th>Image</th>
+                                        </thead>
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>KHUSHAL</td>
+                                                            <td>20</td>
+                                                            <td>88</td>
+                                                            <td rowspan="2"><input type="image" src="download.png"></td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td>KARTIK</td>
+                                                            <td>34</td>
+                                                            <td>95</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>SOHAM</td>
+                                                            <td>38</td>
+                                                            <td>93</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td colspan="3">End of this page</td> <!-- Colspan is use to cover 2,3 , all etc column (Horizontally)-->
+                                                            <td rowspan="4">Raw</td>
+                                                        </tr>
+                                                    </tbody>
+                                    </table>
+                                </center>
+
+
+
+    
+</body>
+</html>
